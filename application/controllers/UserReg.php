@@ -20,8 +20,18 @@ class UserReg extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('UserRegistration/Basics/header_view');
-		$this->load->view('UserRegistration/user_reg');
-		$this->load->view('UserRegistration/Basics/footer_view');
+		$this->userregistration();
+	}
+	public function userregistration()
+	{
+		$this->load->view('UserRegistration/Basics/header');
+		$this->load->view('UserRegistration/UserRegistration');
+		$this->load->view('UserRegistration/Basics/footer');
+	}
+	public function profile()
+	{
+		$this->load->view('UserRegistration/Basics/header');
+		$this->load->view('UserRegistration/Profile');
+		$this->load->view('UserRegistration/Basics/footer');
 	}
 }

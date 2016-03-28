@@ -70,7 +70,7 @@
                         <a href="#contact">Contact</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="<?php echo base_url();?>index.php/restaurantreg/AdminRegistration">Sign In</a>
+                        <a href="<?php echo base_url();?>index.php/welcome/login">Sign In</a>
                     </li>
                 </ul>
             </div>
@@ -167,7 +167,7 @@
                <div class="col-md-2"></div>
                 <div class="col-md-5">
                    <div>
-                       <a href="#" class="btn btn-lg btn-outline" style="background-color: #16A085">
+                       <a href="<?php echo base_url();?>index.php/UserReg" class="btn btn-lg btn-outline" style="background-color: #16A085">
                            <i class="fa fa-user"> </i> Register to find a job
                        </a>
                    </div>

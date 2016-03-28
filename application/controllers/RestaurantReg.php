@@ -22,13 +22,13 @@ class RestaurantReg extends CI_Controller {
 	{
 		$this->AdminRegistration();
 	}
-	public function AdminRegistration()
+	public function adminregistration()
 	{
 		$this->load->view('RestaurantRegistration/Basics/header');
 		$this->load->view('RestaurantRegistration/AdminRegistration');
 		$this->load->view('RestaurantRegistration/Basics/footer');
 	}
-	public function RestaurantRegistration()
+	public function restaurantregistration()
 	{
 		$this->load->view('RestaurantRegistration/Basics/header');
 		$this->load->view('RestaurantRegistration/RestaurantRegistration');

@@ -20,12 +20,12 @@ class RestaurantDash extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('');
+		$this->dashboard();
 	}
 	public function dashboard()
 	{
-		$this->load->view('Basics/header');
-		$this->load->view('');
-		$this->load->view('Basics/footer');
+		$this->load->view('RestaurantDash/Basics/header');
+		$this->load->view('RestaurantDash/Basics/nav');
+		$this->load->view('RestaurantDash/Basics/footer');
 	}
 }

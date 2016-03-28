@@ -33,7 +33,7 @@
 								<input type="text" class="form-control" value="" name="" id="" required="required" readonly="readonly">
 							</div>
 							<div class="form-group">
-								<a href="<?php echo base_url();?>index.php/RestaurantReg/RestaurantRegistration"><input  class="btn btn-block" value="Submit" name="submit" id="_submit"></a>
+								<a href="<?php echo base_url();?>index.php/RestaurantDash/RestaurantRegistration"><input  class="btn btn-block" value="Submit" name="submit" id="_submit"></a>
 							</div>
 						</div>
 					</div>

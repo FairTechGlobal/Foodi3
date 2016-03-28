@@ -20,8 +20,8 @@ class UserDash extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('RestaurantRegistration/Basics/header');
-		$this->load->view('RestaurantRegistration/AdminRegistration');
-		$this->load->view('RestaurantRegistration/Basics/footer');
+		$this->load->view('UserDash/Basics/header');
+		$this->load->view('UserDash/Basics/nav');
+		$this->load->view('UserDash/Basics/footer');
 	}
 }
