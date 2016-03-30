@@ -63,14 +63,14 @@
 
                 <!-- Begin # Login Form -->
                 <div id="login-form">
-                    <?php echo form_open('index.php/login_controller/login');?>
+                    <?php echo form_open('index.php/login/dummy');?>
                     <?php echo validation_errors();?>
                     <div class="modal-body" style="width: 70%; margin-left: 15%">
                         <div id="div-login-msg">
                         </div>
-                        <input id="login_username" name="username" class="form-control" type="text" placeholder="Username..." required>
+                        <input id="login_username" name="username" class="form-control" type="text" placeholder="Username..." >
                         </br>
-                        <input id="login_password" name="password" class="form-control" type="password" placeholder="Password" required>
+                        <input id="login_password" name="password" class="form-control" type="password" placeholder="Password" >
 
                     </div>
                     <div class="modal-footer">
@@ -111,7 +111,7 @@
 
                 <!-- Begin | Register Form -->
                 <div id="register-form" style="display:none;">
-                    <?php echo form_open('index.php/login_controller/register');?>
+                    <?php echo form_open('index.php/login/dummy');?>
                     <?php $this->load->helper('string');?>
                     <?php echo validation_errors();?>
                     <div class="modal-body">
