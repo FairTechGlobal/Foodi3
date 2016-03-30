@@ -157,10 +157,11 @@
 												<input class="form-control" type="text" name="" id="" >
 											</div>
 										</div>
-										<div class="form-group">
-											<a href="<?php echo base_url();?>index.php/UserDash"><input style="background-color: #ffeb3b;" class="btn btn-block" value="Submit" name="submit" id="_submit"></a>
-										</div>
+										
 									</div>
+									<div class="form-group">
+											<a href="<?php echo base_url();?>index.php/UserDash"><button style="background-color: #ffeb3b;" class="btn btn-block" name="submit" id="_submit">Submit</button></a>
+										</div>
 								</div>
 							</div>
 						</div>
