@@ -240,7 +240,7 @@
 														<div class="col-md-3 widget">
 															<div class="stats-left ">
 																<h5>Today</h5>
-																<h4> Users</h4>
+																<h4>Applicants</h4>
 															</div>
 															<div class="stats-right">
 																<label>90</label>
@@ -259,8 +259,8 @@
 														</div>
 														<div class="col-md-3 widget states-thrd">
 															<div class="stats-left">
-																<h5>Today</h5>
-																<h4>Tasks</h4>
+																<h5>Month</h5>
+																<h4>Users</h4>
 															</div>
 															<div class="stats-right">
 																<label>51</label>
@@ -269,8 +269,8 @@
 														</div>
 														<div class="col-md-3 widget states-last">
 															<div class="stats-left">
-																<h5>Today</h5>
-																<h4>Alerts</h4>
+																<h5>Yearly</h5>
+																<h4>Applicants</h4>
 															</div>
 															<div class="stats-right">
 																<label>30</label>
@@ -478,20 +478,17 @@
                            <div class="menu">
 									<ul id="menu" >
 										<li><a href="index.html"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
-										 <li id="menu-academico" ><a href="#"><i class="fa fa-table"></i> <span> Tabs &amp; Panels</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+										 <li id="menu-academico" ><a href="#"><i class="fa fa-table"></i> <span>Add</span> <span class="fa fa-angle-right" style="float: right"></span></a>
 										   <ul id="menu-academico-sub" >
-											<li id="menu-academico-avaliacoes" ><a href="tabs.html"> Tabs &amp; Panels</a></li>
-											<li id="menu-academico-boletim" ><a href="widget.html">Widgets</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="calender.html">Calendar</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="tabs.html">Add Admin</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="calender.html">Add User</a></li>
 											
 										  </ul>
 										</li>
-										 <li id="menu-academico" ><a href="#"><i class="fa fa-file-text-o"></i> <span>Ui Elements</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+										 <li id="menu-academico" ><a href="#"><i class="fa fa-file-text-o"></i> <span>Company Profile</span> <span class="fa fa-angle-right" style="float: right"></span></a>
 											 <ul id="menu-academico-sub" >
-												<li id="menu-academico-avaliacoes" ><a href="forms.html">Forms</a></li>
-												<li id="menu-academico-boletim" ><a href="validation.html">Validation Forms</a></li>
-												<li id="menu-academico-boletim" ><a href="table.html">Tables</a></li>
-												<li id="menu-academico-boletim" ><a href="buttons.html">Buttons</a></li>
+												<li id="menu-academico-avaliacoes" ><a href="forms.html">Create</a></li>
+												<li id="menu-academico-boletim" ><a href="validation.html">Update</a></li>
 											  </ul>
 										 </li>
 									<li><a href="typography.html"><i class="lnr lnr-pencil"></i> <span>Typography</span></a></li>
