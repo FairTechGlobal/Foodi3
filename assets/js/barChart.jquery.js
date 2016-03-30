@@ -75,8 +75,7 @@
 		$.proxy(subscribe_legend, this)();
 
 		return this;
-	};
-
+	}
 	// up to date
 	function update(){
 
@@ -93,9 +92,7 @@
 		$.proxy(drawX, this)(columns);
 
 		return this;
-	};
-
-
+	}
 	// group bar values by keys
 	function groupByKey(bars, hiddenBars){
 
@@ -117,8 +114,7 @@
 		});
 
 		return columns;
-	};
-
+	}
 	// set bars colors
 	function colorizeBars(bars, colors){
 
@@ -139,8 +135,7 @@
 		});
 
 		return bars;
-	};
-
+	}
 	// find max value through all bars
 	function findMax(columns){
 
@@ -165,8 +160,7 @@
 	    }
 
 	    return result;
-	};
-
+	}
 	// find total sum of all values through all bars
 	function totalSum(columns){
 
@@ -185,8 +179,7 @@
 	    }
 
 	    return result;
-	};
-
+	}
 	// draw y-milestones
 	function drawY(columns){
 
@@ -240,8 +233,7 @@
 		    $(this).append($container);
 
 		    return this;
-	};
-
+	}
 	// draw x-values
 	function drawX(columns){
 
@@ -297,7 +289,7 @@
 
 	            localMaxHeight = (localMax * settings.maxHeight / max);
 
-	            var text = key.toString()
+	            var text = key.toString();
 
 	            //it's timestamp, so let's format it
 	            if (text.length === 10 && text == parseInt(text)) {
@@ -388,8 +380,7 @@
 	    }
 
 	    return this;
-	};
-
+	}
 	// adds tooltip markup to dom
 	function drawTooltip(){
 
@@ -405,8 +396,7 @@
 	    }
 
 	    return this;
-	};
-
+	}
 	// legend
 	function drawLegend(bars, hiddenBars){
 
@@ -424,7 +414,7 @@
 			var $legendItem = $('<div />')
 									.addClass('legend-item')
 									.css({ color : bar.color })
-									.html( bar.name )
+									.html( bar.name );
 
     		var $legendItemWrapper = $('<div />')
     							.addClass('legend-item-wrapper')
@@ -436,8 +426,7 @@
     	});
 
     	return this;
-	};
-
+	}
 	// mousemove and mouseleave pon bar
 	function subscribe_tooltip(){
 
@@ -469,8 +458,7 @@
 		});
 
 		return this;
-	};
-
+	}
 	// checkbox click and double click
 	function subscribe_legend(){
 
@@ -600,14 +588,12 @@
 	    });
 
 	    return this;
-	};
-
+	}
 	// dateformat to dd/mm/yyyy
 	function formatDate(dt) {
 	    var dd = dt.getDate();
 	    var mm = dt.getMonth() + 1;
 	    var yyyy = dt.getFullYear().toString().substring(2);
 	    return [ dd, mm, yyyy ].join('.');
-	};
-
+	}
 }(jQuery));

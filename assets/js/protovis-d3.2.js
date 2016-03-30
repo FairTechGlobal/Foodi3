@@ -42,7 +42,7 @@ if (!Array.prototype.map) Array.prototype.map = function(f, o) {
  */
 if (!Array.prototype.filter) Array.prototype.filter = function(f, o) {
   var n = this.length;
-  var result = new Array();
+  var result = [];
   for (var i = 0; i < n; i++) {
     if (i in this) {
       var v = this[i];
@@ -837,7 +837,7 @@ pv.Format.time = function(type) {
         return t;
       }
     }
-  }
+  };
 
   return format;
 };
@@ -1442,7 +1442,7 @@ pv.max.index = function(array, f) {
     }
   }
   return maxi;
-}
+};
 
 /**
  * Returns the minimum value of the specified array of numbers. If the specified
@@ -1484,7 +1484,7 @@ pv.min.index = function(array, f) {
     }
   }
   return mini;
-}
+};
 
 /**
  * Returns the arithmetic mean, or average, of the specified array. If the
@@ -2425,7 +2425,7 @@ pv.Nest.prototype.entries = function() {
     for (var k in map) {
       var v = map[k];
       array.push({ key: k, values: (v instanceof Array) ? v : entries(v) });
-    };
+    }
     return array;
   }
 
@@ -5470,7 +5470,7 @@ pv.SvgScene.monotoneTangents = function(points) {
 pv.SvgScene.curveMonotone = function(points) {
   if (points.length <= 2) return "";
   return this.curveHermite(points, this.monotoneTangents(points));
-}
+};
 
 /**
  * @private Interpolates the given points using Fritsch-Carlson Monotone cubic
@@ -5969,7 +5969,7 @@ pv.SvgScene.pathSegment = function(s1, s2) {
 /** @private Line-line intersection, per Akenine-Moller 16.16.1. */
 pv.SvgScene.lineIntersect = function(o1, d1, o2, d2) {
   return o1.plus(d1.times(o2.minus(o1).dot(d2.perp()) / d1.dot(d2.perp())));
-}
+};
 
 /** @private Returns the miter join path for the specified points. */
 pv.SvgScene.pathJoin = function(s0, s1, s2, s3) {

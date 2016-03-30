@@ -21,7 +21,7 @@
 				} else {
 					$("body").removeClass("fixed-header-on");
 				}
-			};
+			}
 		});
 
 		$(window).load(function() {
@@ -31,7 +31,7 @@
 				} else {
 					$("body").removeClass("fixed-header-on");
 				}
-			};
+			}
 		});
 
 		//Scroll Spy
@@ -77,8 +77,7 @@
 					$this.addClass('object-visible');
 				}
 			});
-		};
-
+		}
 		// Isotope filters
 		//-----------------------------------------------
 		if ($('.isotope-container').length>0) {
@@ -99,8 +98,7 @@
 					return false;
 				});
 			});
-		};
-
+		}
 		//Modal
 		//-----------------------------------------------
 		if($(".modal").length>0) {

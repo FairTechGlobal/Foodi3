@@ -19,13 +19,13 @@
 <!--    <link href="--><?php //echo base_url()."assets/css/home/freelancer.css"?><!--" rel="stylesheet">-->
     <link href="<?php echo base_url()."assets/css/home/half-slider.css"?>" rel="stylesheet">
 
-    <script src="<?php echo base_url("assets/js/bootstrap.min.js"); ?>"></script>
+<!--    <script src="--><?php //echo base_url("assets/js/bootstrap.min.js"); ?><!--"></script>-->
     <script src="<?php echo base_url("assets/js/jquery.min.js"); ?>"></script>
     <script src="<?php echo base_url("assets/js/jquery-1.10.1.min.js"); ?>"></script>
     <script src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
 
     <!-- Custom Fonts -->
-    <link href="<?php echo base_url()."assets/"?>font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url()."assets/font-awesome/css/font-awesome.min.css"?>" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 

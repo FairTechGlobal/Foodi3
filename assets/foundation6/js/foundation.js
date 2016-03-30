@@ -65,7 +65,7 @@ var Foundation = {
 
     this._uuids.push(plugin.uuid);
 
-    return;
+
   },
   /**
    * @function
@@ -87,7 +87,7 @@ var Foundation = {
     for(var prop in plugin){
       plugin[prop] = null;//clean up script to prep for garbage collection.
     }
-    return;
+
   },
 
   /**
@@ -187,7 +187,7 @@ var Foundation = {
         }catch(er){
           console.error(er);
         }finally{
-          return;
+
         }
       });
     });
@@ -997,7 +997,7 @@ Foundation.Motion = Motion;
           $item.addClass('is-submenu-item ' + subItemClass);
         }
       });
-      return;
+
     },
     Burn: function(menu, type){
       var items = menu.find('li').removeAttr('tabindex'),
@@ -1651,7 +1651,7 @@ Foundation.Motion = Motion;
         return false;
         //nothing
       }
-    }
+    };
 
     if(nodes.length){
       //for each element that needs to listen for resizing, scrolling, (or coming soon mutation) add a single observer
@@ -1863,7 +1863,7 @@ Foundation.Motion = Motion;
    * @returns {Object} jQuery object with the selector.
    */
   Abide.prototype.findFormError = function($el){
-    var $error = $el.siblings(this.options.formErrorSelector)
+    var $error = $el.siblings(this.options.formErrorSelector);
     if(!$error.length){
       $error = $el.parent().find(this.options.formErrorSelector);
     }
@@ -2226,7 +2226,7 @@ Foundation.Motion = Motion;
     if($target.parent().hasClass('is-active')){
       if(this.options.allowAllClosed || $target.parent().siblings().hasClass('is-active')){
         this.up($target);
-      }else{ return; }
+      }else{  }
     }else{
       this.down($target);
     }
@@ -2457,7 +2457,7 @@ Foundation.Motion = Motion;
             $nextElement = $element.parents('li').first().next('li');
           }
 
-          return;
+
         }
       });
       Foundation.Keyboard.handleKey(e, 'AccordionMenu', {
@@ -2739,7 +2739,7 @@ Foundation.Motion = Motion;
         if ($(this).is($element)) {
           $prevElement = $elements.eq(Math.max(0, i-1));
           $nextElement = $elements.eq(Math.min(i+1, $elements.length-1));
-          return;
+
         }
       });
       Foundation.Keyboard.handleKey(e, 'Drilldown', {
@@ -2898,7 +2898,7 @@ Foundation.Motion = Motion;
       var $link = $(this);
       if($link.data('savedHref')){
         $link.attr('href', $link.data('savedHref')).removeData('savedHref');
-      }else{ return; }
+      }else{  }
     });
     Foundation.unregisterPlugin(this);
   };
@@ -3445,7 +3445,7 @@ Foundation.Motion = Motion;
 
         if(hasSub){
           if(hasClicked){
-            if(!_this.options.closeOnClick || (!_this.options.clickOpen && !hasTouch) || (_this.options.forceFollow && hasTouch)){ return; }
+            if(!_this.options.closeOnClick || (!_this.options.clickOpen && !hasTouch) || (_this.options.forceFollow && hasTouch)){  }
             else{
               e.stopImmediatePropagation();
               e.preventDefault();
@@ -3457,7 +3457,7 @@ Foundation.Motion = Motion;
             _this._show($elem.children('.is-dropdown-submenu'));
             $elem.add($elem.parentsUntil(_this.$element, '.' + parClass)).attr('data-is-click', true);
           }
-        }else{ return; }
+        }else{  }
       });
     }
 
@@ -3497,7 +3497,7 @@ Foundation.Motion = Motion;
         if ($(this).is($element)) {
           $prevElement = $elements.eq(i-1);
           $nextElement = $elements.eq(i+1);
-          return;
+
         }
       });
 
@@ -3510,7 +3510,7 @@ Foundation.Motion = Motion;
         if($sub.length){
           _this._show($sub);
           $element.find('li > a:first').focus();
-        }else{ return; }
+        }else{  }
       }, closeSub = function() {
         //if ($element.is(':first-child')) {
         var close = $element.parent('ul').parent('li');
@@ -3804,13 +3804,13 @@ Foundation.Motion = Motion;
       }
     }
     return tooSmall;
-  }
+  };
   /**
    * A noop version for the plugin
    * @private
    */
   Equalizer.prototype._killswitch = function(){
-    return;
+
   };
   /**
    * Calls necessary functions to update Equalizer upon DOM change
@@ -3868,7 +3868,7 @@ Foundation.Motion = Motion;
         group++;
         groups[group] = [];
         lastElTopOffset=elOffsetTop;
-      };
+      }
       groups[group].push([this.$watched[i],this.$watched[i].offsetHeight]);
     }
 
@@ -3920,7 +3920,7 @@ Foundation.Motion = Motion;
       if (groupsILength<=2) {
         $(groups[i][0][0]).css({'height':'auto'});
         continue;
-      };
+      }
       /**
         * Fires before the heights per row are applied
         * @event Equalizer#preequalizedRow
@@ -4594,7 +4594,7 @@ OffCanvas.prototype.open = function(event, trigger) {
     $('[data-off-canvas-wrapper]').addClass('is-off-canvas-open is-open-'+ _this.options.position);
 
     _this.$element
-      .addClass('is-open')
+      .addClass('is-open');
 
     // if(_this.options.isSticky){
     //   _this._stick();
@@ -6533,7 +6533,7 @@ Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
     }
 
     this.points = breaks;
-    return;
+
   };
 
   /**
@@ -6992,7 +6992,7 @@ Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
             $prevElement = $elements.eq(Math.max(0, i-1));
             $nextElement = $elements.eq(Math.min(i+1, $elements.length-1));
           }
-          return;
+
         }
       });
 
