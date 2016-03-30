@@ -7,7 +7,8 @@
                 <div class="caption">
                     <h3>CV</h3>
                     <p>Create your Cv, save it, print it in all the formats available and find a Job.</p>
-                    <p><a href="#" data-toggle="modal" data-target="#login-modal" class="btn btn-primary" role="button">Create CV</a> <a href="#" data-toggle="modal" data-target="#login-modal" class="btn btn-default" role="button">Edit My Cv</a></p>
+                    <p><a href="#" data-toggle="modal" data-target="#login-modal" class="btn btn-primary" role="button">Create CV</a>
+                    </p>
                 </div>
             </div>
         </div>
