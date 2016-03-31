@@ -19,4 +19,24 @@ class Resturant extends CI_Controller {
 	{
 		$this->load->view('resturant/dashboard');
 	}
+	public function adduser(){
+		$this->load->view('resturant/adduser');
+	}
+	public function addadmin(){
+		$this->load->view('resturant/addadmin');
+	}
+	public function create(){
+		$this->load->view('resturant/create');
+	}
+	public function update(){
+		$this->load->view('resturant/update');
+	}
+	public function inbox(){
+		$this->load->view('resturant/inbox');
+	}
+	public function compose(){
+		$this->load->view('resturant/compose');
+	}
+
+
 }
