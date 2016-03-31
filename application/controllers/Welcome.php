@@ -20,7 +20,17 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+<<<<<<< HEAD
 		$this->load->view('index/index');
+=======
+		$this->load->view('home/header');
+		$this->load->view('home/nav');
+		$this->load->view('home/slider');
+		$this->load->view('home/about');
+		$this->load->view('home/contact');
+		$this->load->view('home/footer');
+		$this->load->view('home/end');
+>>>>>>> SItuma
 	}
 	
 }
