@@ -12,7 +12,7 @@
 									  <a href="index.html"><span class=" name-caret">David Okoth</span></a>
 									 <p>Resturant Manager in Company</p>
 									<ul>
-									<li><a class="tooltips" href="<?php echo base_url('index.php/Resturant/index');?>"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
+									<li><a class="tooltips" href="<?php echo base_url('index.php/Resturant/index');?>'"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
 										<li><a class="tooltips" href="<?php echo base_url('index.php/Resturant/index');?>"><span>Settings</span><i class="lnr lnr-cog"></i></a></li>
 										<li><a class="tooltips" href="<?php echo base_url('index.php/Resturant/index');?>"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
 										</ul>
